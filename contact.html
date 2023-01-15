@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2><a href="index.html">Pitos' Pies</a></h2>
+        <p>Handmade pies of great quality</p>
+        <nav>
+            <ul>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <article>
+            <h2>Details</h2>
+            <form action="/sendData" method="GET">
+                <label for="textName">Name:</label>
+                <input type="text" id="textName" name="name" minlength="3" maxlength="40" required> (*)
+                <br>
+        
+                <label for="textEmail">E-mail:</label>
+                <input type="email" name="email" id="textEmail" maxlength="40" required> (*)
+                <br>
+        
+                <label for="textPhone">Tel:</label>
+                <input type="tel" name="phone" id="textPhone">
+                <br>
+        
+                <label for="txtMessage">Message:</label>
+                <textarea name="message" id="txtMessage" cols="40" rows="6"></textarea> (*)
+                <br>
+        
+                (*) Mandatory 
+                <br>
+        
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Offers</h2>
+        <p>Giveaway</p>
+        <p>Order 10, get 1 free</p>
+    </aside>
+
+    <footer>
+        <p>&copy; Pitos' Pies 2023</p>
+    </footer>
+</body>
+</html>

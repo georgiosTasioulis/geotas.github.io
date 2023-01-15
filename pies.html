@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2><a href="index.html">Pitos' Pies</a></h2>
+        <p>Handmade pies of great quality</p>
+        <nav>
+            <ul>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pies</h1>
+        <article>
+            <h2>Our Pies</h2>
+            <table>
+                <tr>
+                    <td><img src="spanakopita.jpg" alt="Spinach Pie"><td>Spinach Pie: </td><TD>4 &euro;</TD> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="manitaropita.jpg" alt="Mushroom Pie"></td><td>Mushroom Pie: </td><td>5.5 &euro;</td>
+                </tr>
+                <tr>
+                    <td><img src="prasopita.jpg" alt="Leak Pie"></td><td>Leak Pie: </td><td>3.5 &euro;</td>
+                </tr>
+                <tr>
+                    <td><img src="boureki.jpg" alt="Bourek Pie"></td><td>Bourek Pie: </td><td>4.5 &euro;</td>
+                </tr>
+            </table>
+        </article>
+
+        <article>
+            <form action="/sendData" method="GET">
+                <h2>Our pies at your place!</h2>
+
+                <p>Delivery hours: 18:00 22:00</p>
+
+                <fieldset>
+                    <legend>Delivery Info</legend>
+                    <label for="txtName">Name:</label>
+                    <input type="text" name="name" id="txtName" minlength="3" maxlength="40" required> (*)
+                    <br>
+
+                    <label for="txtAddress">Address:</label>
+                    <input type="text" name="address" id="txtAddress" required> (*)
+                    <br>
+
+                    <label for="txtArea">Area:</label>
+                    <select name="area" id="txtArea">
+                        <option value="Athens">Athens</option>
+                        <option value="Piraeus">Piraeus</option>
+                    </select>
+                    <br>
+
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" id="txtEmail" name="email">
+                    <br>
+
+                    <label for="txtTel">Tel:</label>
+                    <input type="phone" name="phone" id="textPhone" readonly> (*)
+                    <br>
+
+                    <label for="txtComments">Comments:</label>
+                    <br>
+                    <textarea name="comments" id="txtComments" cols="30" rows="10"></textarea>
+                    <br>
+
+                    (*) Required fields
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order</legend>
+                    <br>
+                    <ul>
+                        <li>
+                            <label for="txtSpinach">Spinach Pie</label>
+                            <input type="number" name="nospinach" id="txtSpinach" value="0">
+                        </li>
+                        <li>
+                            <label for="txtMushroom">Mushroom Pie</label>
+                            <input type="number" name="nosmushroom" id="txtMushroom" value="0">
+                        </li>
+                        <li>
+                            <label for="txtLeak">Leak Pie</label>
+                            <input type="number" name="noleak" id="txtLeak" value="0">
+                        </li>
+                        <li>
+                            <label for="txtBurek">Bourek Pie</label>
+                            <input type="number" name="noburek" id="txtBurek" value="0">
+                        </li>
+                    </ul>
+            
+                    <input type="checkbox" name="offer" id="chkOffer" value="offer">
+                    <label for="chkOffer">1 free out of 10</label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>How to Pay</legend>
+            
+                    <input type="radio" name="payment" id="rdVISA" value="visa">
+                    <label for="rdVISA">Visa</label>
+            
+                    <input type="radio" name="payment" id="rdCash" value="cash">
+                    <label for="rdCash">Cash</label>
+            
+                    <input type="radio" id="rdPist" name="payment" value="credit">
+                    <label for="rdPist">Item</label>
+                </fieldset>
+            
+                <input type="submit" value="Send">
+                <input type="reset" value="Send">
+            </form>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Offers</h2>
+        <p>Giveaway</p>
+        <p>Order 10, get 1 free</p>
+    </aside>
+    
+    <footer>
+        <p>&copy; Pitos' Pies 2023</p>
+    </footer>
+</body>
+</html>
